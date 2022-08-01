@@ -32,7 +32,7 @@ contract Auction {
         AuctDetails[AssetId].push(AuctDetail(bidPrice, msg.sender));
     }
 
-    function Result(uint ID) public payable returns (address, uint, uint) {
+    function Result(uint ID) public payable returns (address, uint) {
         uint Price = 0;
         address OwnerId;
         uint len = AuctDetails[ID].length;
@@ -42,7 +42,7 @@ contract Auction {
                 OwnerId = AuctDetails[ID][j].bidderId;
             }                       
         }
-        return (OwnerId, Price, len);
+        return (OwnerId, Price);
     }
 }
  
