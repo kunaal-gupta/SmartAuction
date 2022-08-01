@@ -1,0 +1,209 @@
+{
+	"id": "229bce28a05b42a89b1fd539fc104e26",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.1",
+	"solcLongVersion": "0.8.1+commit.df193b15",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Bidding.sol": {
+				"content": "// \"SPDX-License-Identifier: <SPDX-License>\"\r\npragma solidity = 0.8.1;\r\n\r\nstruct Asset {\r\n    string Name;\r\n    string assetDescr;\r\n    uint cost;\r\n}\r\n\r\nfunction createAsset() {\r\n    \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"errorCode": "1878",
+				"formattedMessage": "Warning: SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.\n--> Bidding.sol\n\n",
+				"message": "SPDX license identifier not provided in source file. Before publishing, consider adding a comment containing \"SPDX-License-Identifier: <SPDX-License>\" to each source file. Use \"SPDX-License-Identifier: UNLICENSED\" for non-open-source code. Please see https://spdx.org for more information.",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "Bidding.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"Bidding.sol": {
+				"ast": {
+					"absolutePath": "Bidding.sol",
+					"exportedSymbols": {
+						"Asset": [
+							8
+						],
+						"createAsset": [
+							12
+						]
+					},
+					"id": 13,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"=",
+								"0.8",
+								".1"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "46:24:0"
+						},
+						{
+							"canonicalName": "Asset",
+							"id": 8,
+							"members": [
+								{
+									"constant": false,
+									"id": 3,
+									"mutability": "mutable",
+									"name": "Name",
+									"nodeType": "VariableDeclaration",
+									"scope": 8,
+									"src": "94:11:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "94:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 5,
+									"mutability": "mutable",
+									"name": "assetDescr",
+									"nodeType": "VariableDeclaration",
+									"scope": 8,
+									"src": "112:17:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_string_storage_ptr",
+										"typeString": "string"
+									},
+									"typeName": {
+										"id": 4,
+										"name": "string",
+										"nodeType": "ElementaryTypeName",
+										"src": "112:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_string_storage_ptr",
+											"typeString": "string"
+										}
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 7,
+									"mutability": "mutable",
+									"name": "cost",
+									"nodeType": "VariableDeclaration",
+									"scope": 8,
+									"src": "136:9:0",
+									"stateVariable": false,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 6,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "136:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"visibility": "internal"
+								}
+							],
+							"name": "Asset",
+							"nodeType": "StructDefinition",
+							"scope": 13,
+							"src": "74:75:0",
+							"visibility": "public"
+						},
+						{
+							"body": {
+								"id": 11,
+								"nodeType": "Block",
+								"src": "176:10:0",
+								"statements": []
+							},
+							"id": 12,
+							"implemented": true,
+							"kind": "freeFunction",
+							"modifiers": [],
+							"name": "createAsset",
+							"nodeType": "FunctionDefinition",
+							"parameters": {
+								"id": 9,
+								"nodeType": "ParameterList",
+								"parameters": [],
+								"src": "173:2:0"
+							},
+							"returnParameters": {
+								"id": 10,
+								"nodeType": "ParameterList",
+								"parameters": [],
+								"src": "176:0:0"
+							},
+							"scope": 13,
+							"src": "153:33:0",
+							"stateMutability": "nonpayable",
+							"virtual": false,
+							"visibility": "internal"
+						}
+					],
+					"src": "46:140:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

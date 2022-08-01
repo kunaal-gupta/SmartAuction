@@ -1,0 +1,68 @@
+{
+	"id": "d722acb177ca3df39103c5811d255253",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.8.1",
+	"solcLongVersion": "0.8.1+commit.df193b15",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Auction.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\npragma solidity = 0.8.1;\r\n\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"Auction.sol": {
+				"ast": {
+					"absolutePath": "Auction.sol",
+					"exportedSymbols": {},
+					"id": 2,
+					"license": "GPL-3.0",
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								"=",
+								"0.8",
+								".1"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "37:24:0"
+						}
+					],
+					"src": "37:28:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
